@@ -1,0 +1,241 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Inter";
+}
+
+p {
+  font-size: 15px;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr 2fr 2fr;
+  background-color: hsl(36, 100%, 99%);
+  gap: 5px;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-top: 3%;
+  margin-right: 10%;
+  margin-bottom: 3%;
+}
+
+.logo {
+  background: url("assets/images/logo.svg");
+  width: 65px;
+  height: 40px;
+}
+.tabs {
+  width: 35%;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: hsl(233, 8%, 79%);
+}
+
+.tabs p:hover {
+  color: hsl(5, 85%, 63%);
+  cursor: pointer;
+}
+
+.mainSection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 0.6 0.4;
+  margin-left: 10%;
+  margin-right: 10%;
+  gap: 40px;
+}
+
+.mainimg {
+  grid-column: 1/3;
+  background: url(assets/images/image-web-3-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 310px;
+  width: 755px;
+}
+
+.headline {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  font-size: 30px;
+  font-weight: 800;
+  color: hsl(240, 100%, 5%);
+  height: 210px;
+}
+
+.description {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  height: 210px;
+}
+
+.description p {
+  text-align: justify;
+  line-height: 2;
+  color: hsl(233, 8%, 79%);
+}
+
+.readmore {
+  background-color: hsl(5, 85%, 63%);
+  color: hsl(240, 100%, 5%);
+  height: 25%;
+  width: 50%;
+  font-size: 15px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.readmore:hover {
+  background-color: hsl(240, 100%, 5%);
+  color: hsl(36, 100%, 99%);
+  cursor: pointer;
+}
+.newSection {
+  grid-row: 1/3;
+  grid-column: 3/4;
+  background-color: hsl(240, 100%, 5%);
+}
+
+.newSection h1 {
+  font-weight: 800;
+  color: hsl(35, 77%, 62%);
+  font-size: 40px;
+  margin: 25px;
+}
+
+.new {
+  margin: 25px;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  color: hsl(36, 100%, 99%);
+  height: 80%;
+}
+
+.new1,
+.new2,
+.new3 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.new1 .divh2,
+.new2 .divh2,
+.new3 .divh2 {
+  text-align: left;
+  line-height: 2;
+}
+
+.new1 .divh2:hover,
+.new2 .divh2:hover,
+.new3 .divh2:hover {
+  color: hsl(35, 77%, 62%);
+  cursor: pointer;
+}
+.new1 .divp,
+.new2 .divp,
+.new3 .divp p {
+  line-height: 2;
+}
+.new1,
+.new2 {
+  border-bottom: 1px solid hsl(36, 100%, 99%);
+}
+
+.new1 {
+  margin-top: 5px;
+}
+.new2,
+.new3 {
+  margin-top: 20px;
+}
+
+.newspop {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 3%;
+  margin-top: 3%;
+  height: 100%;
+}
+
+.news1,
+.news2,
+.news3 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 15px;
+}
+
+.news1 .imgbox {
+  background: url(assets/images/image-retro-pcs.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+  width: 100%;
+  grid-column: 1/2;
+}
+.news2 .imgbox {
+  background: url(assets/images/image-top-laptops.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.news3 .imgbox {
+  background: url(assets/images/image-gaming-growth.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.news1 h1,
+.news2 h1,
+.news3 h1 {
+  font-weight: 800;
+  color: hsl(5, 85%, 63%);
+  font-size: 40px;
+}
+
+.news1 h3,
+.news2 h3,
+.news3 h3 {
+  line-height: 2;
+  color: hsl(240, 100%, 5%);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.news1 h3:hover,
+.news2 h3:hover,
+.news3 h3:hover {
+  color: hsl(5, 85%, 63%);
+  cursor: pointer;
+}
+
+.news1 p,
+.news2 p,
+.news3 p {
+  line-height: 2;
+  color: hsl(233, 8%, 79%);
+  font-weight: 400;
+}
